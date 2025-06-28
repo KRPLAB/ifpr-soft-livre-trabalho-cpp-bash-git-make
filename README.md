@@ -1,2 +1,8 @@
-# ifpr-soft-livre-trabalho-cpp-bash-git-make
-Repositório com 3 programas C++ (primo, vetor, matriz) usando Git, Make e Bash para automação e testes, para disciplina de Software Livre do IFPR.
+# ifpr-cc-livre-trabalho-cpp-bash-git-make
+
+Este repositório contém a resolução do trabalho prático proposto para a disciplina de **Sistemas de Software Livre** do curso de Bacharelado em Ciência da Computação, no Instituto Federal do Paraná (Campus Pinhais). O objetivo principal é a implementação de programas em C++ utilizando Git para controle de versão, Make para automação da compilação e Bash para gerenciamento de testes.
+
+## Integrantes do Grupo
+
+* Kauan da Rosa Paulino
+* Kamilli Bach Alves dos Santos
