@@ -77,50 +77,33 @@ Utilizamos `make` para automatizar a compilação. O `Makefile` está configurad
     ```
 
 ## Estrutura do Repositório
+```
 .
+├── bin
 ├── Makefile
-
 ├── README.md
-
 ├── src
-
 │   ├── docs
-
 │   │   └── orientacoes-trabalho.pdf
-
 │   └── programs
-
 │       ├── matriz.cpp
-
 │       ├── primo.cpp
-
 │       └── vetor.cpp
-
 └── tests
-
     ├── generate-test-matriz.sh
-
     ├── generate-test-primo.sh
-
     ├── generate-test-vetor.sh
-
     ├── matriz
-
     │   ├── test1-matriz.in
-
     │   └── test1-matriz.out
-
     ├── primo
-
     │   ├── test1-primo.in
-
     │   └── test1-primo.out
-    
     └── vetor
-
         ├── test1-vetor.in
-
         └── test1-vetor.out
+
+```
 
 * `src/programs`: Contém os arquivos-fonte em C++.
 * `src/docs`: Contém o pdf com orientações de como deve-se fazer o projeto.
