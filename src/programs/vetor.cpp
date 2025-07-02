@@ -13,9 +13,20 @@ void imprime_vetor(int *v, int tam){
 	printf("\n");
 }
 
+int maior_elemento(int *v, int tam){
+	int maior = v[0];
+
+	for (int i = 1; i < tam; i++) {
+		if (v[i] > maior)
+			maior = v[i];
+	}
+	return maior;
+}
+
 int main(){
 	int v[MAX_TAM];
 	int n;
+	int maior;
 
 	scanf("%d", &n);
 
@@ -25,7 +36,8 @@ int main(){
 	}
 	
 	le_vetor(v, n);
-	imprime_vetor(v, n);
+	maior = maior_elemento(v, n);
 
+	printf("%d\n", maior);
 	return 0;
 }
