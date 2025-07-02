@@ -2,6 +2,17 @@
 
 #define MAX_TAM 1000
 
+void le_vetor(int *v, int tam){
+	for(int i = 0; i < tam; i++)
+		scanf("%d", &v[i]);
+}
+
+void imprime_vetor(int *v, int tam){
+	for(int j = 0; j < tam; j++)
+		printf("%d ", v[j]);
+	printf("\n");
+}
+
 int main(){
 	int v[MAX_TAM];
 	int n;
@@ -12,14 +23,9 @@ int main(){
 		printf("Tamanho maximo do vetor excedido\n");
 		return 1;
 	}
-
-	for(int i = 0; i < n; i++)
-		scanf("%d", &v[i]);
-
-	for(int j = 0; j < n; j++)
-		printf("%d ", v[j]);
-
-	printf("\n");
+	
+	le_vetor(v, n);
+	imprime_vetor(v, n);
 
 	return 0;
 }
