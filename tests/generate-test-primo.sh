@@ -1,6 +1,7 @@
 #!/bin/bash
 
 TEST_DIR="./primo"
+mkdir -p "$TEST_DIR"
 
 TIMESTAMP=$(date +%Y%m%d%H%M%S)
 
@@ -14,4 +15,4 @@ echo "$RANDOM_NUMBER" > "$INPUT_FILE"
 echo "Arquivo de teste para primo.cpp gerado em: $INPUT_FILE"
 echo "Conteúdo: $RANDOM_NUMBER"
 
-../bin/primo < "$INPUT_FILE" >> "$OUTPUT_FILE"
+../bin/primo < "$INPUT_FILE" > "$OUTPUT_FILE"
