@@ -30,6 +30,17 @@ void adicao_matrizes(int m1[MAX_D][MAX_D], int m2[MAX_D][MAX_D], int m3[MAX_D][M
 	}
 }
 
+void multiplicacao_matrizes(int m1[MAX_D][MAX_D], int m2[MAX_D][MAX_D], int m3[MAX_D][MAX_D], int tam) {
+	for (int i = 0; i < tam; ++i) {
+		for (int j = 0; j < tam; ++j) {
+			m3[i][j] = 0;
+			for (int k = 0; k < tam; ++k) {
+				m3[i][j] += m1[i][k] * m2[k][j];
+			}
+		}
+	}
+}
+
 int main() {
 	int matriz_1[MAX_D][MAX_D];
 	int matriz_2[MAX_D][MAX_D];
