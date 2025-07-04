@@ -22,17 +22,15 @@ gerador_matrix() {
         done
         matrix_output+="$(echo "$row_elements" | xargs)\n"
     done
-    echo -e "$matriz_output" # O -e permite a interpretação de \n
+    echo -e "$matriz_output"
 }
 
 MATRIZ1=$(gerador_matrix "$MATRIZ_SIZE")
 echo -e "$MATRIZ1" >> "$INPUT_FILE"
 
-# Gera a segunda matriz
 MATRIZ2=$(gerador_matrix "$MATRIZ_SIZE")
 echo -e "$MATRIZ2" >> "$INPUT_FILE"
 
-# Gera uma operação aleatória (a, s, m)
 OPERATIONS=("a" "s" "m")
 RANDOM_OP_INDEX=$(( RANDOM % ${#OPERATIONS[@]} ))
 OPERATION=${OPERATIONS[$RANDOM_OP_INDEX]}
