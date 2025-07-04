@@ -1,11 +1,16 @@
+# Compilador e flags
 CXX = g++
 CXXFLAGS = -Wall -Werror -Wextra -pedantic
 
+# Diretório de saída para os binários
 BIN_DIR = bin
 
+# Lista de binários
 BINARIES = $(BIN_DIR)/primo $(BIN_DIR)/vetor $(BIN_DIR)/matriz
 
 .PHONY: all clean
+
+# --- ALVOS PRINCIPAIS ---
 
 all: $(BINARIES)
 
