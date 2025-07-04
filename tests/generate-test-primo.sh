@@ -14,4 +14,4 @@ echo "$RANDOM_NUMBER" > "$INPUT_FILE"
 echo "Arquivo de teste para primo.cpp gerado em: $INPUT_FILE"
 echo "Conteúdo: $RANDOM_NUMBER"
 
-../bin/primo < "$INPUT_FILE" >> "$OUTPUT_FILE"
+../bin/primo < "$INPUT_FILE" > "$OUTPUT_FILE"
