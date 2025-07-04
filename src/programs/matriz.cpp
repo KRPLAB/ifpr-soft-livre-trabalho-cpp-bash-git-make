@@ -30,6 +30,14 @@ void adicao_matrizes(int m1[MAX_D][MAX_D], int m2[MAX_D][MAX_D], int m3[MAX_D][M
 	}
 }
 
+void subtracao_matrizes(int m1[MAX_D][MAX_D], int m2[MAX_D][MAX_D], int m3[MAX_D][MAX_D], int tam) {
+	for (int i = 0; i < tam; ++i) {
+		for (int j = 0; j < tam; ++j) {
+			m3[i][j] = m1[i][j] - m2[i][j];
+		}
+	}
+}
+
 void multiplicacao_matrizes(int m1[MAX_D][MAX_D], int m2[MAX_D][MAX_D], int m3[MAX_D][MAX_D], int tam) {
 	for (int i = 0; i < tam; ++i) {
 		for (int j = 0; j < tam; ++j) {
