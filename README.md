@@ -26,7 +26,7 @@ O trabalho consiste na implementação de três programas em C++:
         $
         ```
 
-2.  **`vetor.cpp`**: Um programa que lê um número inteiro `n` (tamanho do vetor) e, em seguida, `n` números inteiros que são os elementos do vetor. O programa deve imprimir o maior valor presente no vetor[cite: 2, 6].
+2.  **`vetor.cpp`**: Um programa que lê um número inteiro `n` (tamanho do vetor) e, em seguida, `n` números inteiros que são os elementos do vetor. O programa deve imprimir o maior valor presente no vetor.
     * **Exemplo de uso:**
         ```bash
         $ ./vetor
@@ -94,14 +94,14 @@ Utilizamos `make` para automatizar a compilação. O `Makefile` está configurad
     ├── generate-test-primo.sh
     ├── generate-test-vetor.sh
     ├── matriz
-    │   ├── test1-matriz.in
-    │   └── test1-matriz.out
+    │   ├── test-DATADECRIACAO-matriz.in
+    │   └── test-DATADECRIACAO-matriz.out
     ├── primo
-    │   ├── test1-primo.in
-    │   └── test1-primo.out
+    │   ├── test-DATADECRIACAO-primo.in
+    │   └── test1-DATADECRIACAO-primo.out
     └── vetor
-        ├── test1-vetor.in
-        └── test1-vetor.out
+        ├── test1-DATADECRIACAO-vetor.in
+        └── test1-DATADECRIACAO-vetor.out
 
 ```
 
