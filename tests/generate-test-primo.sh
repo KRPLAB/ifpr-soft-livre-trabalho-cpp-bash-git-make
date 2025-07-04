@@ -1,6 +1,6 @@
 #!/bin/bash
 
-TEST_DIR="./tests/primo"
+TEST_DIR="./primo"
 
 TIMESTAMP=$(date +%Y%m%d%H%M%S)
 
