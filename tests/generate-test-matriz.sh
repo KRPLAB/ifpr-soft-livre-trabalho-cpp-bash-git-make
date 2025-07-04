@@ -25,11 +25,11 @@ gerador_matrix() {
     echo -e "$matriz_output" # O -e permite a interpretação de \n
 }
 
-MATRIZ1=$(generate_matrix "$MATRIZ_SIZE")
+MATRIZ1=$(gerador_matrix "$MATRIZ_SIZE")
 echo -e "$MATRIZ1" >> "$INPUT_FILE"
 
 # Gera a segunda matriz
-MATRIZ2=$(generate_matrix "$MATRIZ_SIZE")
+MATRIZ2=$(gerador_matrix "$MATRIZ_SIZE")
 echo -e "$MATRIZ2" >> "$INPUT_FILE"
 
 # Gera uma operação aleatória (a, s, m)
