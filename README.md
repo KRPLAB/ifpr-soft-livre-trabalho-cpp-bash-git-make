@@ -107,7 +107,7 @@ Utilizamos `make` para automatizar a compilação. O `Makefile` está configurad
 
 * `src/programs`: Contém os arquivos-fonte em C++.
 * `src/docs`: Contém o pdf com orientações de como deve-se fazer o projeto.
-* `tests/`: Contém os scripts para geração de casos de teste e subdiretórios com exemplos de entradas (`.in`) e saídas esperadas (`.out`).
+* `tests/`: Contém os scripts para geração de casos de teste e subdiretórios com exemplos de entradas (`.in`) e saídas geradas (`.out`).
 * `Makefile`: O arquivo para automação da compilação.
 * `README.md`: Este arquivo, com informações sobre o projeto.
 * `.gitignore`: Arquivo para ignorar arquivos gerados pelo sistema de controle de versão (Git) e arquivos compilados.
@@ -117,9 +117,9 @@ Utilizamos `make` para automatizar a compilação. O `Makefile` está configurad
 
 Foram criados três scripts shell para gerar casos de teste para cada programa:
 
-* **`generate-test-primo.sh`**: Gera uma entrada de teste para o programa `primo.cpp`.
-* **`generate-test-vetor.sh`**: Gera uma entrada de teste para o programa `vetor.cpp`.
-* **`generate-test-matriz.sh`**: Gera uma entrada de teste para o programa `matriz.cpp`.
+* **`generate-test-primo.sh`**: Gera uma entrada de teste para o programa `primo.cpp` e a respectiva saída.
+* **`generate-test-vetor.sh`**: Gera uma entrada de teste para o programa `vetor.cpp` e a respectiva saída.
+* **`generate-test-matriz.sh`**: Gera uma entrada de teste para o programa `matriz.cpp` e a respectiva saída.
 
 Para executar um script de geração de teste, navegue até o diretório `tests/` e execute:
 
