@@ -11,25 +11,21 @@ MATRIZ_SIZE=$(( RANDOM % 4 + 2 ))
 
 echo "$MATRIZ_SIZE" > "$INPUT_FILE"
 
-gerador_matrix() {
+generate_and_print_matriz() {
     local size=$1
-    local matriz_output=""
     for (( i=0; i<size; i++ )); do
-        local row_elements=""
+        local row_elements=()
         for (( j=0; j<size; j++ )); do
             ELEMENT=$(( RANDOM % 100 ))
-            row_elements="$row_elements $ELEMENT"
+            row_elements+=("$ELEMENT")
         done
-        matrix_output+="$(echo "$row_elements" | xargs)\n"
+        echo "${row_elements[@]}"
     done
-    echo -e "$matriz_output"
 }
 
-MATRIZ1=$(gerador_matrix "$MATRIZ_SIZE")
-echo -e "$MATRIZ1" >> "$INPUT_FILE"
+generate_and_print_matriz "$MATRIZ_SIZE" >> "$INPUT_FILE"
 
-MATRIZ2=$(gerador_matrix "$MATRIZ_SIZE")
-echo -e "$MATRIZ2" >> "$INPUT_FILE"
+generate_and_print_matriz "$MATRIZ_SIZE" >> "$INPUT_FILE"
 
 OPERATIONS=("a" "s" "m")
 RANDOM_OP_INDEX=$(( RANDOM % ${#OPERATIONS[@]} ))
@@ -38,9 +34,6 @@ echo "$OPERATION" >> "$INPUT_FILE"
 
 echo "Arquivo de teste para matriz.cpp gerado em: $INPUT_FILE"
 echo "Conteúdo:"
-echo "$MATRIX_SIZE"
-echo -e "$MATRIX1"
-echo -e "$MATRIX2"
-echo "$OPERATION"
+cat "$INPUT_FILE"
 
 ../bin/matriz < "$INPUT_FILE" > "$OUTPUT_FILE"
