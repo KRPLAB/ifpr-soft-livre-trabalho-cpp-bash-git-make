@@ -54,6 +54,7 @@ int main() {
 	int matriz_2[MAX_D][MAX_D];
 	int matriz_3[MAX_D][MAX_D];
 	int n;
+	char operacao;
 
 	cout << "Dimensoes da matriz:\n";
 	cin >> n;
@@ -65,7 +66,17 @@ int main() {
 
 	leitura_matriz(matriz_1, n);
 	leitura_matriz(matriz_2, n);
-	adicao_matrizes(matriz_1, matriz_2, matriz_3, n);
+
+	cin >> operacao;
+
+	if(operacao == 'a'){
+		adicao_matrizes(matriz_1, matriz_2, matriz_3, n);
+	} else if(operacao == 's'){
+		subtracao_matrizes(matriz_1, matriz_2, matriz_3, n);
+	} else {
+		multiplicacao_matrizes(matriz_1, matriz_2, matriz_3, n);
+	}
+	
 	impressao_matriz(matriz_3, n);
 
 	return 0;
