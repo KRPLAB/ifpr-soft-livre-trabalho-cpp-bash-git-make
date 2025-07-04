@@ -1,6 +1,7 @@
 #!/bin/bash
 
 TEST_DIR="./primo"
+mkdir -p "$TEST_DIR"
 
 TIMESTAMP=$(date +%Y%m%d%H%M%S)
 
